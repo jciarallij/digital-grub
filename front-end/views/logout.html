@@ -1,0 +1,41 @@
+<div class="container" ng-controller="loginController">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="col-sm-6 col-xs-3 banner">
+                <a href="#/"><img style="min-width: 100px" src="img/logo-200x200-cup.png" class="dcrosters" /><img style="min-width: 150px" src="img/logo-roast3.png" class="dclogo" /></a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation                        </span><span class="icon-bar">                      </span><span class="icon-bar">                       </span><span class="icon-bar"></span></button>
+            </div>
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                <div class="col-sm-6 col-xs-12">
+                    <a href="#/register">
+                        <button type="submit" class="btn btn-primary sign-up-btn btn-top">Sign Up</button>
+                    </a>
+                    <a href="#/login">
+                        <button type="submit" class="btn login-btn btn-top">Login</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="navigation-bar-small">
+        <div class="container-fluid secondary-navbar">
+            <ul class="small-nav text-center col-sm-12 col-xs-12">
+                <li><a href="#/" class="fa fa-home"><span>Home</span></a></li>
+                <li><a href="#/options" class="fa fa-coffee"><span>Options</span></a></li>
+                <li><a href="#/delivery" class="fa fa-truck"><span>Delivery</span></a></li>
+                <li><a href="#/checkout" class="fa fa-credit-card active"><span class="nav-text">Payment</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>{{username}}, Thank you!</h1>
+            <h5>Your meals is on the way. In the meantime, keep Grubbin!.</h5>
+        </div>
+    </div>
+    <div class="row">
+        <h5 class="error-message text-center">{{errorMessage}}</h5>
+    </div>
+</div>

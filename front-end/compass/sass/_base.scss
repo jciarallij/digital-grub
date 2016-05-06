@@ -1,0 +1,147 @@
+body {
+  background-color: #ccb195;
+  color: white;
+  text-shadow: 0 0 0.1em black, 0 0 0.1em black;
+  &.footer-clear{
+	  	position: relative;
+  		padding-bottom: 120px;
+
+  }
+}
+
+.btn-cancel {
+	display: block;
+    position: relative;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
+    background: #1275ff;
+    background-image: -webkit-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+    background-image: -moz-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+    background-image: -ms-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+    background-image: -o-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+    background-image: -webkit-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+    background-image: -moz-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+    background-image: -ms-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+    background-image: -o-linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+    background-image: linear-gradient(#7dc5ee,#008cdd 85%,#30a2e4);
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+    -ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+    -o-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.25);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    text-transform: none;
+}
+
+
+
+a {
+  color: #00B7FF;
+}
+
+img {
+	max-width: 100%;
+}
+
+.btn-top {
+	margin-top: 25px;
+	margin-bottom: 15px;
+	background-color: #917360;
+	float: right;
+	border-color: #6f5c4b;
+	
+}
+
+.nav-options {
+	padding: 0;
+	margin: 0;
+}
+
+.btn {
+	text-transform: uppercase;
+}
+
+.login-btn{
+	background-color: #284741;
+	border-color: #284741;
+}
+
+.login-text {
+	text-transform: none;
+	text-decoration: none;
+	color: white;
+}
+
+.login-text:hover {
+	color: lightgray;
+}
+
+.login-btn:hover {
+	color: white;
+}
+
+.fail {
+	color: red;
+	text-shadow: none;
+}
+.sign-up-btn:hover{
+	background-color: #ccb195;
+}
+
+.content {
+	margin-top: 101px;
+}
+
+.navigation-bar-small {
+	margin-top: 101px;
+}
+
+.navbar {
+	background-color: #284741;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #284741;
+	font-size: 20px;
+	color: #ccb195;
+	height: 130px;
+	img {
+		width: 100px;
+		margin-top: 7px;
+	}
+
+}
+
+.icons {
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.banner-title {
+	margin-top: 40px;
+}
+
+.hr-line {
+	width: 300px;
+	border-color: #ccb195;
+}
+
+img.dclogo {
+	width: 20%;
+	margin-top: 20px;
+}

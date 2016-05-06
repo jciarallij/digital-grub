@@ -1,0 +1,138 @@
+<div class="content" ng-controller="checkoutCtrl">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="col-sm-6 col-xs-3 banner">
+                <a href="#/"><img style="min-width: 100px" src="img/logo-200x200-cup.png" class="dcrosters" /><img style="min-width: 150px" src="img/logo-roast3.png" class="dclogo" /></a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation                        </span><span class="icon-bar">                      </span><span class="icon-bar">                       </span><span class="icon-bar"></span></button>
+            </div>
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                <div class="col-sm-6 col-xs-12">
+                    <a href="#/">
+                        <button type="submit" class="btn login-btn btn-top">Logout</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" class="btn login-btn btn-top login-text">Welcome Back! {{username}}</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="navigation-bar-small">
+        <div class="container-fluid secondary-navbar">
+            <ul class="small-nav text-center col-sm-12 col-xs-12">
+                <li><a href="#/" class="fa fa-home"><span>Home</span></a></li>
+                <li><a href="#/options" class="fa fa-coffee"><span>Options</span></a></li>
+                <li><a href="#/delivery" class="fa fa-truck"><span>Delivery</span></a></li>
+                <li><a href="#/checkout" class="fa fa-credit-card active"><span class="nav-text">Check Out</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="grey-header">
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-2">
+                <i class="fa fa-home" aria-hidden="true"></i> Home
+            </div>
+            <div class="col-sm-2">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i> Options
+            </div>
+            <div class="col-sm-2">
+                <i class="fa fa-truck" aria-hidden="true"></i> Delivery
+            </div>
+            <div class="col-sm-2 active">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Checkout
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form ng-submit="checkoutForm()">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Payment</h1>
+                    <h5>Order summary below</h5>
+                </div>
+            </div>
+            <div class="container light-panel">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Choices</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Grind</p>
+                        <p>Frequency of Delivery</p>
+                        <p>Coffee (lbs)</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>{{grindType}}</p>
+                        <p>{{frequency}}</p>
+                        <p>{{quantity}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Delivery Information</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>
+                            <label>Name: </label> {{userOptions.fullname}}</p>
+                        <p>
+                            <label>Address: </label> {{userOptions.address}}</p>
+                        <p>
+                            <label>Address (cont.): </label> {{userOptions.address2}}</p>
+                        <p>
+                            <label>City: </label> {{userOptions.city}}</p>
+                        <p>
+                            <label>State: </label> {{userOptions.state}}</p>
+                        <p>
+                            <label>Zip: </label> {{userOptions.zip}}</p>
+                        <p>
+                            <label>Delivery Date: </label> {{userOptions.deliveryDate}}</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>
+                            <label>Grind Type: </label> {{userOptions.grind}}</p>
+                        <p>
+                            <label>Frequency: </label> {{userOptions.frequency}}</p>
+                        <p>
+                            <label>Quantity: </label> {{userOptions.quantity}}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Current Charge</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Quantity</p>
+                        <p>Shipping</p>
+                        <h2>Total</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>{{quantity}}lbs x $20.00/lb = {{total}}</p>
+                        <p>FREE!</p>
+                        <h2>{{total}}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="button-holder">
+                        <form action="" method="POST">
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_DHjW8QhMRsI9BEmuawWQReBj" data-amount="" data-name="Digital Grub" data-description="Meal Order" data-image="img/logo-200x200-cup.png" data-locale="auto">
+                            </script>
+                        </form>
+                        <a href="#/options">
+                            <button type="submit" name="cancel" class="btn btn-cancel">Cancel Order</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

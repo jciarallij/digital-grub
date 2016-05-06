@@ -1,0 +1,67 @@
+extends layout
+
+block content
+	nav.navbar.navbar-inverse.navbar-fixed-top
+		.container-fluid
+			.col-sm-6.col-xs-3.banner
+				a(href='/')
+					img.dcrosters(style="min-width: 100px" src="images/logo-200x200-cup.png")
+					img.dclogo( style="min-width: 150px" src="images/logo-roast3.png")
+			.navbar-header
+					button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+						span.sr-only Toggle navigation						
+						span.icon-bar						
+						span.icon-bar						 
+						span.icon-bar
+
+				#bs-example-navbar-collapse-1.collapse.navbar-collapse
+					.col-sm-6.col-xs-9
+						a(href="/register")
+							button.btn.btn-primary.sign-up-btn.btn-top(type="submit") Sign Up
+						a(href="/login")
+							button.btn.login-btn.btn-top(type="submit") Login
+
+	.container-fluid
+		.row
+			#intro.col-sm-12.content.steps
+				h3 A better way to grind
+				h4 Freshly roasted coffee beans delivered weekly to your door.
+
+		.row
+			#how-it-works.col-sm-12.how-it-works.text-center
+				p How It Works
+			//- .col-sm-12.arrow-holder
+			//- 	.arrow-down
+
+		.row
+			#step-one.col-sm-12.steps
+				h3.title 1. We get the coffee
+				p Each bean is hand selected
+				p Each bean is measured for precise size
+				p Each bean is tenderly caressed
+				//- .col-sm-12.arrow-holder
+				//- 	.arrow-down
+
+		.row
+			#step-two.col-sm-12.steps
+				img.photo(src="images/photo.jpg")
+				h3 2. We pick up the coffee
+				p We place the coffee in bags
+				p Each bag is transported in climate-controlled trucks
+				p Every six hours the bags are rotated to keep the beans uniform and delicious
+				//- .col-sm-12.arrow-holder
+				//- 	.arrow-down.step-two-arrow
+		.row
+			#step-three.col-sm-12.steps
+				h3 3. You drink the coffee
+				p The coffee taste delicious
+				p You want more coffee!!!
+				//- .col-sm-12.arrow-holder
+				//- 	.arrow-down
+
+		.row
+			#get-started.col-sm-12.text-center
+				a(href="/register")
+					button.btn.btn-primary.center-block.get-started(type="button") Get Started
+				h3.more-info Want to know more about us?
+				button.btn.btn-primary.center-block(type="button") About Us

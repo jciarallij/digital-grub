@@ -1,0 +1,39 @@
+extends layout
+
+block login
+	nav.navbar.navbar-inverse.navbar-fixed-top
+			.container-fluid
+				.col-sm-6.col-xs-3.banner
+					a(href='/')
+						img.dcrosters(style="min-width: 100px" src="images/logo-200x200-cup.png")
+						img.dclogo( style="min-width: 150px" src="images/logo-roast3.png")
+				
+				.navbar-header
+						button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+							span.sr-only Toggle navigation						
+							span.icon-bar						
+							span.icon-bar						 
+							span.icon-bar
+
+					#bs-example-navbar-collapse-1.collapse.navbar-collapse
+						.col-sm-6.col-xs-12
+							a(href="/register")
+								button.btn.btn-primary.sign-up-btn.btn-top(type="submit") Register
+							a(href="/register")
+								button.btn.login-btn.btn-top.login-text(type="submit") Need an account?
+
+
+	.login-wrapper
+		.container.col-lg-6.col-lg-offset-3.col-sm-7.col-sm-offset-3.col-xs-12
+			h1.text-center Login
+			p.lead.text-center Please enter your username and password below.
+			br
+			form(role='form', action='/login', method='post')
+				.form-group
+					input.form-control(type='text', name='username', placeholder='Enter Your Username')
+				.form-group
+					input.form-control(type='password', name='password', placeholder='Enter Your Password')
+				.button-holder.text-center
+					button.btn.btn-sign-in.center-block(type='submit') Log In
+					a(href='/')
+						button.btn.btn-cancel.center-block(type='button') nevermind

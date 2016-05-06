@@ -1,0 +1,538 @@
+/* line 1, ../compass/sass/_base.scss */
+body {
+  background-color: #ccb195;
+  color: white;
+  text-shadow: 0 0 0.1em black, 0 0 0.1em black;
+}
+/* line 5, ../compass/sass/_base.scss */
+body.footer-clear {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+/* line 12, ../compass/sass/_base.scss */
+.btn-cancel {
+  display: block;
+  position: relative;
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+  background: #1275ff;
+  background-image: -webkit-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
+  background-image: -moz-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
+  background-image: -ms-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
+  background-image: -o-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
+  background-image: -webkit-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
+  background-image: -moz-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
+  background-image: -ms-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
+  background-image: -o-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
+  background-image: linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-transform: none;
+}
+
+/* line 48, ../compass/sass/_base.scss */
+a {
+  color: #00B7FF;
+}
+
+/* line 52, ../compass/sass/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 56, ../compass/sass/_base.scss */
+.btn-top {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-color: #917360;
+  float: right;
+  border-color: #6f5c4b;
+}
+
+/* line 65, ../compass/sass/_base.scss */
+.nav-options {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 70, ../compass/sass/_base.scss */
+.btn {
+  text-transform: uppercase;
+}
+
+/* line 74, ../compass/sass/_base.scss */
+.login-btn {
+  background-color: #284741;
+  border-color: #284741;
+}
+
+/* line 79, ../compass/sass/_base.scss */
+.login-text {
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 85, ../compass/sass/_base.scss */
+.login-text:hover {
+  color: lightgray;
+}
+
+/* line 89, ../compass/sass/_base.scss */
+.login-btn:hover {
+  color: white;
+}
+
+/* line 93, ../compass/sass/_base.scss */
+.fail {
+  color: red;
+  text-shadow: none;
+}
+
+/* line 97, ../compass/sass/_base.scss */
+.sign-up-btn:hover {
+  background-color: #ccb195;
+}
+
+/* line 101, ../compass/sass/_base.scss */
+.content {
+  margin-top: 101px;
+}
+
+/* line 105, ../compass/sass/_base.scss */
+.navigation-bar-small {
+  margin-top: 101px;
+}
+
+/* line 109, ../compass/sass/_base.scss */
+.navbar {
+  background-color: #284741;
+}
+
+/* line 113, ../compass/sass/_base.scss */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #284741;
+  font-size: 20px;
+  color: #ccb195;
+  height: 130px;
+}
+/* line 121, ../compass/sass/_base.scss */
+.footer img {
+  width: 100px;
+  margin-top: 7px;
+}
+
+/* line 129, ../compass/sass/_base.scss */
+.icons a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 135, ../compass/sass/_base.scss */
+.banner-title {
+  margin-top: 40px;
+}
+
+/* line 139, ../compass/sass/_base.scss */
+.hr-line {
+  width: 300px;
+  border-color: #ccb195;
+}
+
+/* line 144, ../compass/sass/_base.scss */
+img.dclogo {
+  width: 20%;
+  margin-top: 20px;
+}
+
+/* line 1, ../compass/sass/_home.scss */
+.navigation-bar {
+  height: 80px;
+  background-color: #284741;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+/* line 8, ../compass/sass/_home.scss */
+.navigation-bar .navigation-bar-left {
+  float: left;
+  width: 50%;
+}
+/* line 12, ../compass/sass/_home.scss */
+.navigation-bar .navigation-bar-right {
+  float: left;
+  width: 50%;
+}
+
+/* line 18, ../compass/sass/_home.scss */
+.more-info {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+/* line 23, ../compass/sass/_home.scss */
+.navbar {
+  background-color: #284741;
+  border-bottom: 2px solid black;
+}
+
+/* line 28, ../compass/sass/_home.scss */
+img.dcrosters {
+  width: 13%;
+  float: left;
+}
+
+/* line 33, ../compass/sass/_home.scss */
+img.photo {
+  float: left;
+  margin-right: 50px;
+  margin-top: 60px;
+  min-width: 15%;
+  transform: rotate(-10deg);
+  margin: 60px 50px 0 10px;
+}
+
+/* line 42, ../compass/sass/_home.scss */
+#intro {
+  background: url("/img/grind.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* line 47, ../compass/sass/_home.scss */
+#step-one {
+  background-image: url("../img/coffee-bags.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 53, ../compass/sass/_home.scss */
+#step-two {
+  background-color: #ccb195;
+}
+
+/* line 57, ../compass/sass/_home.scss */
+#step-three {
+  background-color: #284741;
+  background-image: url("../img/cup-beans.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 64, ../compass/sass/_home.scss */
+#get-started {
+  background-color: #ccb195;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* line 69, ../compass/sass/_home.scss */
+#get-started a {
+  text-decoration: none;
+}
+/* line 72, ../compass/sass/_home.scss */
+#get-started button {
+  background-color: #284741;
+  height: 60px;
+  width: 200px;
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  border: 0px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 88, ../compass/sass/_home.scss */
+#my-story {
+  background-color: #ccb195;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 93, ../compass/sass/_home.scss */
+#my-story button {
+  background-color: #284741;
+  height: 60px;
+  width: 200px;
+  margin-bottom: 40px;
+  color: white;
+  font-size: 20px;
+  border: 0px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+}
+/* line 106, ../compass/sass/_home.scss */
+#my-story h3 {
+  text-shadow: none;
+  color: black;
+}
+
+/* line 112, ../compass/sass/_home.scss */
+.steps {
+  min-height: 300px;
+}
+
+/* line 119, ../compass/sass/_home.scss */
+.arrow-one {
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 50px solid green;
+  position: absolute;
+  top: 0;
+}
+
+/* line 133, ../compass/sass/_home.scss */
+#how-it-works {
+  font-size: 30px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #ccb195;
+}
+/* line 138, ../compass/sass/_home.scss */
+#how-it-works p {
+  text-shadow: none;
+  color: #284741;
+}
+
+/* line 145, ../compass/sass/_home.scss */
+.banner {
+  min-width: 300px;
+}
+
+/* line 149, ../compass/sass/_home.scss */
+.get-started:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 154, ../compass/sass/_home.scss */
+.get-started:active {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 1, ../compass/sass/_login.scss */
+.login-wrapper {
+  margin-top: 100px;
+}
+
+/* line 5, ../compass/sass/_login.scss */
+.login-btn {
+  color: white;
+}
+
+/* line 1, ../compass/sass/_reg.scss */
+.register-wrapper {
+  margin-top: 100px;
+}
+
+/* line 5, ../compass/sass/_reg.scss */
+.btn-register {
+  margin-top: 10px;
+  display: inline-block;
+  margin-right: 5px;
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  color: black;
+}
+
+/* line 15, ../compass/sass/_reg.scss */
+.btn-cancel {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 120px;
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+
+/* line 25, ../compass/sass/_reg.scss */
+.btn-sign-in {
+  margin-top: 10px;
+  display: inline-block;
+  margin-right: 5px;
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  color: black;
+}
+
+/* line 1, ../compass/sass/_options.scss */
+.secondary-navbar {
+  text-transform: uppercase;
+  background-color: gray;
+  color: white;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 60px;
+  border-bottom: 2px solid black;
+  z-index: 100;
+}
+
+/* line 14, ../compass/sass/_options.scss */
+.small-nav {
+  margin-top: 60px;
+  min-width: 460px;
+  font-size: 18px;
+  padding: 0 5px;
+  overflow: hidden;
+}
+/* line 20, ../compass/sass/_options.scss */
+.small-nav span {
+  font-size: 12px;
+  padding-left: 8px;
+}
+/* line 24, ../compass/sass/_options.scss */
+.small-nav li {
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+  color: white;
+}
+/* line 29, ../compass/sass/_options.scss */
+.small-nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 36, ../compass/sass/_options.scss */
+#options {
+  margin-top: 170px;
+  margin-bottom: 50px;
+}
+
+/* line 41, ../compass/sass/_options.scss */
+img.my-img {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+}
+
+/* line 48, ../compass/sass/_options.scss */
+.options-holder {
+  background-color: lightgray;
+  margin-right: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+/* line 56, ../compass/sass/_options.scss */
+.options-holder-two {
+  background-color: gray;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+/* line 64, ../compass/sass/_options.scss */
+.options-block {
+  margin-bottom: 20px;
+  background-color: lightgray;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid black;
+  height: 200px;
+}
+/* line 71, ../compass/sass/_options.scss */
+.options-block img {
+  margin-top: 30px;
+  width: 100px;
+}
+
+/* line 78, ../compass/sass/_options.scss */
+.btn-submit {
+  background-color: #284741;
+  height: 40px;
+  width: 160px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 18px;
+  border: 0px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 98, ../compass/sass/_options.scss */
+  .small-nav {
+    position: relative;
+    left: -53px;
+  }
+  /* line 101, ../compass/sass/_options.scss */
+  .small-nav span {
+    font-size: 10px;
+  }
+
+  /* line 105, ../compass/sass/_options.scss */
+  .btn-top {
+    left: 20px;
+  }
+
+  /* line 108, ../compass/sass/_options.scss */
+  .sign-up-btn {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 117, ../compass/sass/_options.scss */
+  .btn-top {
+    position: relative;
+    right: -20px;
+    top: -4px;
+  }
+}
+/* line 1, ../compass/sass/_delivery.scss */
+.help-block {
+  text-shadow: none;
+  color: #284741;
+  font-weight: bold;
+}
+
+/* line 7, ../compass/sass/_delivery.scss */
+.delivery-label {
+  margin-top: 40px;
+}
+
+/* line 11, ../compass/sass/_delivery.scss */
+.btn-delivery {
+  width: 120px;
+  margin-bottom: 50px;
+  margin-left: 14px;
+}

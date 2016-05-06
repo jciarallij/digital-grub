@@ -1,0 +1,43 @@
+<div class="content" ng-controller="loginController">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="col-sm-6 col-xs-3 banner">
+                <a href="#/"><img style="min-width: 100px" src="img/logo-200x200-cup.png" class="dcrosters" /><img style="min-width: 150px" src="img/logo-roast3.png" class="dclogo" /></a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation                      </span><span class="icon-bar">                      </span><span class="icon-bar">                       </span><span class="icon-bar"></span></button>
+            </div>
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                <div class="col-sm-6 col-xs-12">
+                    <a href="#/register">
+                        <button type="submit" class="btn btn-primary sign-up-btn btn-top">Register</button>
+                    </a>
+                    <a href="#/register">
+                        <button type="submit" class="btn login-btn btn-top login-text">Need an account?</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="login-wrapper">
+        <div class="container col-lg-6 col-lg-offset-3 col-sm-7 col-sm-offset-3 col-xs-12">
+            <h1 class="text-center">Login</h1>
+            <p class="lead text-center">Please enter your username and password below.</p>
+            <br/>
+            <form role="form" ng-submit="loginForm()">
+                <div class="form-group">
+                    <input type="text" name="username" ng-model="username" placeholder="Enter Your Username" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" ng-model="password" placeholder="Enter Your Password" class="form-control" />
+                </div>
+                <div class="button-holder text-center">
+                    <button type="submit" class="btn btn-sign-in center-block">Log In</button>
+                    <a href="#/">
+                        <button type="button" class="btn btn-cancel center-block">nevermind</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

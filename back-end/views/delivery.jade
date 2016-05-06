@@ -1,0 +1,126 @@
+extends layout
+
+block delivery
+
+	nav.navbar.navbar-inverse.navbar-fixed-top
+		.container-fluid
+			.col-sm-6.col-xs-3.banner
+				a(href='/')
+					img.dcrosters(style="min-width: 100px" src="images/logo-200x200-cup.png")
+					img.dclogo( style="min-width: 150px" src="images/logo-roast3.png")
+			.navbar-header
+					button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+						span.sr-only Toggle navigation						
+						span.icon-bar						
+						span.icon-bar						 
+						span.icon-bar
+
+				#bs-example-navbar-collapse-1.collapse.navbar-collapse
+					.col-sm-6.col-xs-12
+						a(href="/")
+							button.btn.btn-primary.sign-up-btn.btn-top(type="submit") logout
+						//- h3 Welcome back, #{username}!
+
+	.navigation-bar-small
+			.container-fluid.secondary-navbar
+				ul.small-nav.text-center.col-sm-12.col-xs-12
+					li
+						a(href="/").fa.fa-home
+							span Home
+					li
+						a(href="/options").fa.fa-coffee
+							span Options
+					li
+						a(href="/delivery").fa.fa-truck
+							span Delivery
+					li
+						a(href="/payment").fa.fa-credit-card
+							span.nav-text Payment
+
+	#delivery.container
+				#delivery-wrapper.col-xs-12
+					#delivery-header Please enter your shipping info
+					#delivery-sub-header
+						| We treat your coffee with care, It will be shipped safely and is guaranteed.
+					.row
+						form.col-sm-8(name='delivery-form', action='/delivery', method='post')
+							.delivery-block.col-sm-12
+								h2.delivery-label Address				
+								.form-group
+									label(for='fullName') Full Name
+									input#fullName.form-control(type='text', name='fullName', placeholder='John Doe', value='', required='')
+								.form-group
+									label(for='address1') Address Line 1
+									input#address1.form-control(type='text', name='address1', placeholder='100 Main Street', value='', required='')
+									p.help-block Street address, P.O. Box, company name, c/o
+								.form-group
+									label(for='address2') Address Line 2
+									input#address2.form-control(type='text', name='address2', placeholder='Apt. 100', value='')
+									p.help-block Apartment, suite, unit, building, floor, etc.
+								.form-group
+									label(for='city') City
+									input#city.form-control(type='text', name='city', placeholder='YourCity', value='', required='')
+									p.help-block City, town, etc.
+								label(for='state') State
+								.form-group
+									select#state.form-control(name='state', style='width:100px')
+										option(value='AL') Alabama
+										option(value='AK') Alaska
+										option(value='AZ') Arizona
+										option(value='AR') Arkansas
+										option(value='CA') California
+										option(value='CO') Colorado
+										option(value='CT') Connecticut
+										option(value='DE') Delaware
+										option(value='DC') District Of Columbia
+										option(value='FL') Florida
+										option(value='GA') Georgia
+										option(value='HI') Hawaii
+										option(value='ID') Idaho
+										option(value='IL') Illinois
+										option(value='IN') Indiana
+										option(value='IA') Iowa
+										option(value='KS') Kansas
+										option(value='KY') Kentucky
+										option(value='LA') Louisiana
+										option(value='ME') Maine
+										option(value='MD') Maryland
+										option(value='MA') Massachusetts
+										option(value='MI') Michigan
+										option(value='MN') Minnesota
+										option(value='MS') Mississippi
+										option(value='MO') Missouri
+										option(value='MT') Montana
+										option(value='NE') Nebraska
+										option(value='NV') Nevada
+										option(value='NH') New Hampshire
+										option(value='NJ') New Jersey
+										option(value='NM') New Mexico
+										option(value='NY') New York
+										option(value='NC') North Carolina
+										option(value='ND') North Dakota
+										option(value='OH') Ohio
+										option(value='OK') Oklahoma
+										option(value='OR') Oregon
+										option(value='PA') Pennsylvania
+										option(value='RI') Rhode Island
+										option(value='SC') South Carolina
+										option(value='SD') South Dakota
+										option(value='TN') Tennessee
+										option(value='TX') Texas
+										option(value='UT') Utah
+										option(value='VT') Vermont
+										option(value='VA') Virginia
+										option(value='WA') Washington
+										option(value='WV') West Virginia
+										option(value='WI') Wisconsin
+										option(value='WY') Wyoming
+								.form-group
+									label	Zip Code
+									input#zipCode.form-control(type='text', name='zipCode', placeholder='Zip Code', style='width:100px', value='', minlength='5', required='')
+								.form-group
+									label Delivery Date
+									input#datepicker.form-control(type='text', name='deliveryDate', placeholder='', style='width:100px', value='')
+									input(type='hidden', name='delivery', value='completed')
+							.button-holder
+								button.btn.btn-submit.btn-delivery(type='submit', name='submit') Submit

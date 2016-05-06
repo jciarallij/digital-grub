@@ -1,0 +1,132 @@
+<div class="content" ng-controller="deliveryCtrl">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="col-sm-6 col-xs-3 banner">
+                <a href="#/"><img style="min-width: 100px" src="img/logo-200x200-cup.png" class="dcrosters" /><img style="min-width: 150px" src="img/logo-roast3.png" class="dclogo" /></a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation                        </span><span class="icon-bar">                      </span><span class="icon-bar">                       </span><span class="icon-bar"></span></button>
+            </div>
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                <div class="col-sm-6 col-xs-12">
+                    <a href="#/">
+                        <button type="submit" class="btn login-btn btn-top">Logout</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" class="btn login-btn btn-top login-text">Welcome Back! {{username}}</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="navigation-bar-small">
+        <div class="container-fluid secondary-navbar">
+            <ul class="small-nav text-center col-sm-12 col-xs-12">
+                <li><a href="#/" class="fa fa-home"><span>Home</span></a></li>
+                <li><a href="#/options" class="fa fa-coffee"><span>Options</span></a></li>
+                <li><a href="#/delivery" class="fa fa-truck active"><span>Delivery</span></a></li>
+                <li><a href="#/checkout" class="fa fa-credit-card"><span class="nav-text">Payment</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="delivery" class="container">
+        <div id="delivery-wrapper" class="col-xs-12">
+            <div id="delivery-header">Please enter your shipping info</div>
+            <div id="delivery-sub-header">We treat your coffee with care, It will be shipped safely and is guaranteed.</div>
+            <div class="row">
+                <form name="delivery-form" action="/delivery" method="post" class="col-sm-8">
+                    <div class="delivery-block col-sm-12">
+                        <h2 class="delivery-label">Address                </h2>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input id="fullName" type="text" name="fullName" placeholder="John Doe" value="" required="" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="address1">Address Line 1</label>
+                            <input id="address1" type="text" name="address1" placeholder="100 Main Street" value="" required="" class="form-control" />
+                            <p class="help-block">Street address, P.O. Box, company name, c/o</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="address2">Address Line 2</label>
+                            <input id="address2" type="text" name="address2" placeholder="Apt. 100" value="" class="form-control" />
+                            <p class="help-block">Apartment, suite, unit, building, floor, etc.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input id="city" type="text" name="city" placeholder="YourCity" value="" required="" class="form-control" />
+                            <p class="help-block">City, town, etc.</p>
+                        </div>
+                        <label for="state">State</label>
+                        <div class="form-group">
+                            <select id="state" name="state" style="width:100px" class="form-control">
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label> Zip Code</label>
+                            <input id="zipCode" type="text" name="zipCode" placeholder="Zip Code" style="width:100px" value="" minlength="5" required="" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label>Delivery Date</label>
+                            <input id="datepicker" type="text" name="deliveryDate" placeholder="" style="width:100px" value="" class="form-control" />
+                            <input type="hidden" name="delivery" value="completed" />
+                        </div>
+                    </div>
+                    <div class="button-holder">
+                        <button type="submit" name="submit" class="btn btn-submit btn-delivery">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

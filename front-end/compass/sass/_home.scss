@@ -1,0 +1,157 @@
+.navigation-bar {
+	height: 80px;
+	background-color: #284741;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	.navigation-bar-left{
+		float: left;
+		width: 50%;
+	}
+	.navigation-bar-right{
+		float: left;
+		width: 50%;
+	}
+}
+
+.more-info {
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+
+.navbar {
+	background-color: #284741;
+	border-bottom: 2px solid black;
+}
+
+img.dcrosters {
+	width: 13%;
+	float: left;
+}
+
+img.photo {
+	float: left;
+	margin-right: 50px;
+	margin-top: 60px;
+	min-width: 15%;
+	transform: rotate(-10deg);
+	margin: 60px 50px 0 10px;
+}
+
+#intro {
+	background: url("/img/grind.jpg") no-repeat center center fixed;
+  	background-size: cover;
+}
+
+#step-one {
+	background-image: url("../img/coffee-bags.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#step-two {
+	background-color: #ccb195;
+}
+
+#step-three {
+	background-color: #284741;
+	background-image: url("../img/cup-beans.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#get-started {
+	background-color: #ccb195;
+	width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    a{
+    	text-decoration: none;
+    }
+	button {
+		background-color: #284741;
+    	height: 60px;
+    	width: 200px;
+    	margin-top: 30px;
+    	color: white;
+    	font-size: 20px;
+    	border: 0px;
+    	letter-spacing: 2px;
+    	text-transform: uppercase;
+    	border-radius: 4px;
+    	text-align: center;
+    	text-decoration: none;
+	}
+}
+
+#my-story {
+	background-color: #ccb195;
+	width: 100%;
+    text-align: center;
+    text-decoration: none;
+	button {
+		background-color: #284741;
+    	height: 60px;
+    	width: 200px;
+    	margin-bottom: 40px;
+    	color: white;
+    	font-size: 20px;
+    	border: 0px;
+    	letter-spacing: 2px;
+    	text-transform: uppercase;
+    	border-radius: 4px;
+    	text-decoration: none;
+	}
+	h3 {
+		text-shadow: none;
+		color: black;
+	}
+}
+
+.steps {
+	min-height: 300px;
+	// position: relative;
+}
+
+
+
+.arrow-one {
+	left: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 50px solid green;
+	position: absolute;
+	top: 0;
+
+}
+
+
+#how-it-works {
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #ccb195;
+	p {
+		text-shadow: none;
+		color: #284741;
+	}
+
+}
+
+.banner {
+	min-width: 300px;
+}
+
+.get-started:hover {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.get-started:active {
+	text-decoration: none;
+	background-color: transparent;
+}

@@ -1,0 +1,55 @@
+<div class="content" ng-controller="regController">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="col-sm-6 col-xs-3 banner">
+                <a href="#/"><img style="min-width: 100px" src="img/logo-200x200-cup.png" class="dcrosters" /><img style="min-width: 150px" src="img/logo-roast3.png" class="dclogo" /></a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation                        </span><span class="icon-bar">                      </span><span class="icon-bar">                       </span><span class="icon-bar"></span></button>
+            </div>
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                <div class="col-sm-6 col-xs-12">
+                    <a href="#/login">
+                        <button type="submit" class="btn btn-primary sign-up-btn btn-top">Login</button>
+                    </a>
+                    <a href="#/login">
+                        <button type="submit" class="btn login-btn btn-top login-text">Already have an account?</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="register-wrapper">
+        <div class="container col-lg-6 col-lg-offset-3 col-sm-7 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+            <div class="row">
+                <h1 class="text-center">Registration                               </h1>
+                <p class="lead text-center">Pick a username and password</p>
+            </div>
+            <div class="row">
+                <form id="registration" ng-submit="registerForm()" name="Registration" role="form">
+                    <div class="form-group">
+                        <label>Username:</label>
+                        <input name="username" ng-model="username" placeholder="Rob Digital" type="text" minlength="5" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input name="password" ng-model="password" placeholder="6 Character Minimum" type="password" minlength="6" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input name="password2" ng-model="password2" placeholder="Confirm Password" type="password" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input name="email" ng-model="email" placeholder="digitalroast@email.com" type="email" class="form-control" />
+                        <div class="button-holder text-center">
+                            <button type="submit" class="btn btn-register center-block">Register</button>&nbsp;
+                            <a href="#/">
+                                <button type="button" class="btn btn-cancel center-block">nevermind</button>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

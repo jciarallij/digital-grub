@@ -1,0 +1,130 @@
+<div class="content" ng-controller="optionsCtrl">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="col-sm-6 col-xs-3 banner">
+                <a href="#/"><img style="min-width: 100px" src="img/logo-200x200-cup.png" class="dcrosters" /><img style="min-width: 150px" src="img/logo-roast3.png" class="dclogo" /></a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation                        </span><span class="icon-bar">                      </span><span class="icon-bar">                       </span><span class="icon-bar"></span></button>
+            </div>
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                <div class="col-sm-6 col-xs-12">
+                    <a href="#/">
+                        <button type="submit" class="btn login-btn btn-top">Logout</button>
+                    </a>
+                    <a href="#">
+                        <button type="submit" class="btn login-btn btn-top login-text">Welcome Back! {{username}}</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="navigation-bar-small">
+        <div class="container-fluid secondary-navbar">
+            <ul class="small-nav text-center col-sm-12 col-xs-12">
+                <li><a href="#/" class="fa fa-home"><span>Home</span></a></li>
+                <li><a href="#/options" class="fa fa-coffee active"><span>Options</span></a></li>
+                <li><a href="#/delivery" class="fa fa-truck"><span>Delivery</span></a></li>
+                <li><a href="#/checkout" class="fa fa-credit-card"><span class="nav-text">Payment</span></a></li>
+            </ul>
+        </div>
+        <div id="options" class="container">
+            <div id="plan-wrapper" class="text-center">
+                <div id="options-header">
+                    <h1>Tell us what you want!!</h1>
+                </div>
+                <div id="options-sub-header">Shipping is free and you can skip any week</div>
+                <div class="row">
+                    <div class="options-holder col-sm-5 col-sm-offset-1 col-xs-12">
+                        <div class="options">
+                            <h1>Individual Plan</h1>
+                            <p class="center-text">For those who drink alone</p><img src="img/solodrinker.jpg" class="my-img" />
+                            <div class="summary">
+                                <div class="row">
+                                    <p class="col-xs-6 align-right">Cups per week: </p>
+                                    <p class="col-xs-6">14</p>
+                                </div>
+                                <div class="row">
+                                    <p class="col-xs-6 align-right">Price per cup: </p>
+                                    <p class="col-xs-6">$.50</p>
+                                </div>
+                                <div class="row">
+                                    <p class="col-xs-6 align-right">Weekly total: </p>
+                                    <p class="col-xs-6">$7.00</p>
+                                </div>
+                                <div class="row">
+                                    <form name="options-form" ng-submit="optionForm()">
+                                        <p class="col-xs-6 align-right">Grind Type:</p>
+                                        <div class="select-box col-xs-6">
+                                            <select id="grind" name="grind" required="" class="form-control">
+                                                <option value="blank"></option>
+                                                <option value="extraCoarse">Extra Coarse</option>
+                                                <option value="coarse">Coarse</option>
+                                                <option value="mediumCoarse">Medium Coarse</option>
+                                                <option value="fine">Fine</option>
+                                                <option value="extraFine">Extra Fine </option>
+                                            </select>
+                                        </div>
+                                        <input type="hidden" name="frequency" value="weekly" />
+                                        <input type="hidden" name="quarterPounds" value="0.35" />
+                                        <div class="row">
+                                            <div class="button-holder col-xs-12">
+                                                <button type="submit" name="submit" class="btn btn-submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <p class="center-text">Shipping is always free.</p>
+                            <p class="center-text">Skip any week. Cancel any time.</p>
+                        </div>
+                    </div>
+                    <div class="options-holder-two col-sm-5 col-xs-12">
+                        <div class="options">
+                            <h1>Family Plan</h1>
+                            <p class="center-text">For those who drink together</p><img src="img/coffeedrinkers.jpg" class="my-img" />
+                            <div class="summary">
+                                <div class="row">
+                                    <p class="col-xs-6 align-right">Cups per week: </p>
+                                    <p class="col-xs-6">40</p>
+                                </div>
+                                <div class="row">
+                                    <p class="col-xs-6 align-right">Price per cup: </p>
+                                    <p class="col-xs-6">$.45</p>
+                                </div>
+                                <div class="row">
+                                    <p class="col-xs-6 align-right">Weekly total: </p>
+                                    <p class="col-xs-6">$18.00 </p>
+                                </div>
+                                <div class="row">
+                                    <form name="options-form" action="/options" method="post">
+                                        <p class="col-xs-6 align-right">Grind Type:</p>
+                                        <div class="select-box col-xs-6">
+                                            <select id="grind" name="grind" required="" class="form-control">
+                                                <option value="blank"></option>
+                                                <option value="extraCoarse">Extra Coarse</option>
+                                                <option value="coarse">Coarse</option>
+                                                <option value="mediumCoarse">Medium Coarse</option>
+                                                <option value="fine">Fine</option>
+                                                <option value="extraFine">Extra Fine </option>
+                                            </select>
+                                        </div>
+                                        <input type="hidden" name="frequency" value="weekly" />
+                                        <input type="hidden" name="quarterPounds" value="0.9" />
+                                        <div class="row">
+                                            <div class="button-holder col-xs-12">
+                                                <button type="submit" name="submit" class="btn btn-submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <p class="center-text">Shipping is always free.</p>
+                            <p class="center-text">Skip any week. Cancel any time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
