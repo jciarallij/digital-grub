@@ -123,9 +123,11 @@
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <div class="button-holder">
-                        <form action="" method="POST">
+                        <form action="http://localhost:4000/payment" method="POST">
                             <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_DHjW8QhMRsI9BEmuawWQReBj" data-amount="" data-name="Digital Grub" data-description="Meal Order" data-image="img/logo-200x200-cup.png" data-locale="auto">
                             </script>
+                            <input type="hidden" name="stripeAmount" value="40">
+                            <input type="hidden" name="stripeEmail" value="test@email.com">
                         </form>
                         <a href="#/options">
                             <button type="submit" name="cancel" class="btn btn-cancel">Cancel Order</button>
