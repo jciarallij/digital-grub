@@ -1,5 +1,5 @@
 var dgApp = angular.module('dgApp', ['ngRoute', 'ngCookies']);
-var apiUrl = 'http://localhost:4000';
+var apiUrl = 'http://www.ciaralli.com:4000';
 
 
 dgApp.config(function($routeProvider) {

@@ -213,7 +213,7 @@ img.photo {
 
 /* line 42, ../compass/sass/_home.scss */
 #intro {
-  background: url("/img/grind.jpg") no-repeat center center fixed;
+  background: url("../img/grind.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
