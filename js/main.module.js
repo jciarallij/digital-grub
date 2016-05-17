@@ -114,6 +114,7 @@ dgApp.controller('loginController', function($scope, $http, $location, $cookies)
         });
     };
 });
+
 dgApp.controller('logoutController', function($scope, $cookies) {
     $cookies.remove("token");
     $cookies.remove("username");
