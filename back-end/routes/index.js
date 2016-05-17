@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 // ***************************** Added MongoDB and Mongoose *****************************
-var mongoUrl = "mongodb://localhost:27017/coffee"
+var mongoUrl = "mongodb://localhost:27017/digitalgrub"
 var mongoose = require('mongoose');
 mongoose.connect(mongoUrl);
 // ***************************** Mongoose Schema and Model *****************************
