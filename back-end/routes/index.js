@@ -53,7 +53,7 @@ router.get('/getUserData', function(req, res, next) {
 // POST route for register
 router.post('/register', function(req, res, next) {
     //The user posted: username, email, password, password2
-
+    console.log('**** register post ***');
     if (req.body.password != req.body.password2) {
         res.json({ failure: 'passwordMatch' });
     } else {
